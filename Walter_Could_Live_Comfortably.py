@@ -1,15 +1,10 @@
 MoneyLeft = 11000000
 SpentPerMonth = 10000
-SpentPerYear = 0
-
-
 MoneyPaidOverall = 0
 MonthsPaidOverall = 0
-YearsPaidOverall = 0
-
-MonthsInYear = 12
 CurrentMonthOfYear = 0
 CurrentYear = 0
+
 
 hasEnoughMoney = True
 
@@ -19,7 +14,7 @@ while hasEnoughMoney == True:
     print(f"{MonthsPaidOverall} months have passed since you began living out here, Walter.")
     print(f"So far, you have spent ${MoneyPaidOverall} during your isolation.\n\n")
     if MoneyLeft >= 10000:
-        CurrentMonthOfYear += 1
+        CurrentMonthOfYear = CurrentMonthOfYear + 1
         MonthsPaidOverall += 1
         MoneyLeft -= SpentPerMonth
         MoneyPaidOverall = MonthsPaidOverall * SpentPerMonth
